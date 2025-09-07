@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
 
         logoimg.setOnClickListener {
 
-            val intent = Intent(this, Signup::class.java)
+            val intent = Intent(this, changeaccount::class.java)
             startActivity(intent)
             finish()
         }
