@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".explorepage">
+
+    <ImageView
+        android:id="@+id/statusbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:src="@drawable/androidstatusbar"
+        android:scaleType="fitXY" />
+
+    <EditText
+        android:id="@+id/searchbar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/statusbar"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/red"
+        android:hint="Search"
+        android:drawableLeft="@drawable/searchicon"
+        android:drawablePadding="10dp"
+        android:background="@color/white"
+        android:paddingLeft="15dp"
+        android:textSize="18dp"
+        android:textColorHint="@color/grey" />
+
+    <HorizontalScrollView
+        android:id="@+id/categoryscroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchbar"
+        android:layout_marginTop="10dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <Button
+                android:id="@+id/shopbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/whiteoval"
+                android:text="Shop"
+                android:textColor="@color/red"
+                android:padding="10dp" />
+
+            <Button
+                android:id="@+id/stylebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/whiteoval"
+                android:text="Style"
+                android:textColor="@color/red"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp" />
+
+            <Button
+                android:id="@+id/sportsbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/whiteoval"
+                android:text="Sports"
+                android:textColor="@color/red"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp" />
+
+            <Button
+                android:id="@+id/autobtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/whiteoval"
+                android:text="Auto"
+                android:textColor="@color/red"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp" />
+
+            <Button
+                android:id="@+id/musicbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/whiteoval"
+                android:text="Music"
+                android:textColor="@color/red"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ScrollView
+        android:id="@+id/explorescroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/categoryscroll"
+        android:layout_marginTop="10dp"
+        android:fillViewport="true"
+        android:clipToPadding="false"
+        android:paddingBottom="80dp">
+
+        <GridLayout
+            android:id="@+id/exploregrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:orientation="horizontal"
+            android:alignmentMode="alignBounds"
+            android:useDefaultMargins="true"
+            android:padding="2dp">
+
+            <ImageView
+                android:id="@+id/post1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="2"
+                android:layout_columnWeight="2"
+                android:layout_rowSpan="2"
+                android:layout_columnSpan="2"
+                android:scaleType="centerCrop"
+                android:src="@drawable/sample1" />
+
+            <ImageView
+                android:id="@+id/post2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/sample2" />
+
+            <ImageView
+                android:id="@+id/post3"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/sample3" />
+
+            <ImageView
+                android:id="@+id/post4"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/sample4" />
+
+            <ImageView
+                android:id="@+id/post5"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="2"
+                android:layout_columnWeight="2"
+                android:layout_rowSpan="2"
+                android:layout_columnSpan="2"
+                android:scaleType="centerCrop"
+                android:src="@drawable/sample5" />
+
+            <ImageView
+                android:id="@+id/post6"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/sample6" />
+
+            <ImageView
+                android:id="@+id/post7"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/sample7" />
+
+            <ImageView
+                android:id="@+id/post8"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/sample8" />
+
+            <ImageView
+                android:id="@+id/post9"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/sample9" />
+
+        </GridLayout>
+    </ScrollView>
+
+
+    <ImageView
+        android:id="@+id/navhome"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/homeicon" />
+
+    <ImageView
+        android:id="@+id/navsearch"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="110dp"
+        android:src="@drawable/searchiconbold" />
+
+    <ImageView
+        android:id="@+id/navadd"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/addicon" />
+
+    <ImageView
+        android:id="@+id/navheart"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="110dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/hearticon" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/navprofile"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/profilepic" />
+
+</RelativeLayout>

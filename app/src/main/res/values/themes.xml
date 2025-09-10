@@ -3,6 +3,9 @@
     <style name="Base.Theme.I230624" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <item name="colorPrimary">@android:color/darker_gray</item>
+        <item name="colorPrimaryContainer">@android:color/darker_gray</item>
     </style>
 
     <style name="Theme.I230624" parent="Base.Theme.I230624" />

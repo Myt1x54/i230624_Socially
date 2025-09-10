@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".homepage">
+
+    <ImageView
+        android:id="@+id/statusbar"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:src="@drawable/androidstatusbar"
+        android:scaleType="fitXY"/>
+
+    <ImageView
+        android:id="@+id/camera"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:src="@drawable/camera2"
+        android:layout_below="@+id/statusbar"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/statusbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:elevation="10dp"
+        android:text="Socially"
+        android:textColor="@color/red"
+        android:textSize="30dp"
+        android:id="@+id/title"
+        android:fontFamily="sans-serif-condensed-medium"
+        >
+    </TextView>
+
+    <ImageView
+        android:id="@+id/reels"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/reels"
+        android:layout_alignRight="@id/statusbar"
+        android:layout_marginRight="60dp"
+        android:layout_below="@+id/statusbar"
+        />
+
+    <ImageView
+        android:id="@+id/msg"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/message"
+        android:layout_alignRight="@id/statusbar"
+        android:layout_below="@+id/statusbar"
+        />
+
+    
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrview"
+        android:scrollbars="none"
+        android:layout_below="@+id/msg">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/profilepic"
+            android:layout_marginTop="30dp"
+            app:civ_border_width="4dp"
+            app:civ_border_color="@color/red"/>
+
+            <TextView
+                android:id="@+id/myname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_image"
+                android:layout_alignLeft="@+id/profile_image"
+                android:elevation="10dp"
+                android:text="Your Story"
+                android:textColor="@color/black"
+                android:textSize="20dp">
+
+
+            </TextView>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/npc1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/npc1"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/profile_image"
+            app:civ_border_width="4dp"
+            app:civ_border_color="@color/red"/>
+
+            <TextView
+                android:id="@+id/npc1name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/npc1"
+                android:layout_below="@+id/npc1"
+                android:elevation="10dp"
+                android:text="Karennne"
+                android:textColor="@color/black"
+                android:textSize="20dp">
+
+
+            </TextView>
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/npc2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/npc2"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/npc1"
+            app:civ_border_width="4dp"
+            app:civ_border_color="@color/red"/>
+
+
+            <TextView
+                android:id="@+id/npc2name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/npc2"
+                android:layout_below="@+id/npc2"
+                android:elevation="10dp"
+                android:text="zackjohn"
+                android:textColor="@color/black"
+                android:textSize="20dp">
+
+
+            </TextView>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/npc3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/npc3"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/npc2"
+            app:civ_border_width="4dp"
+            app:civ_border_color="@color/red"/>
+
+            <TextView
+                android:id="@+id/npc3name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/npc3"
+                android:layout_below="@+id/npc3"
+                android:elevation="10dp"
+                android:text="kieron_d"
+                android:textColor="@color/black"
+                android:textSize="20dp">
+
+
+            </TextView>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/npc4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/npc4"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/npc3"
+            app:civ_border_width="4dp"
+            app:civ_border_color="@color/red"/>
+
+            <TextView
+                android:id="@+id/npc4name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/npc4"
+                android:layout_below="@+id/npc4"
+                android:elevation="10dp"
+                android:text="craig_d"
+                android:textColor="@color/black"
+                android:textSize="20dp">
+
+
+            </TextView>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/npc5"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/npc5"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/npc4"
+                app:civ_border_width="4dp"
+                app:civ_border_color="@color/red"/>
+
+            <TextView
+                android:id="@+id/npc5name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/npc5"
+                android:layout_below="@+id/npc5"
+                android:elevation="10dp"
+                android:text="olatunji"
+                android:textColor="@color/black"
+                android:textSize="20dp">
+
+
+            </TextView>
+
+        </RelativeLayout>
+
+
+    </HorizontalScrollView>
+    
+    <ScrollView
+        android:id="@+id/posts"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@+id/scrview">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/npc6"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/npc6"
+                android:layout_marginTop="30dp"/>
+
+            <TextView
+                android:id="@+id/npc6name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/npc6"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp"
+                android:elevation="10dp"
+                android:text="maria_b"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20dp">
+
+
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/loc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/npc6"
+                android:layout_marginTop="60dp"
+                android:layout_marginLeft="20dp"
+                android:elevation="10dp"
+                android:text="Tokyo, Japan"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="15dp">
+
+
+            </TextView>
+
+
+
+            <ImageView
+                android:id="@+id/moreop"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:src="@drawable/moreop"/>
+
+            <ImageView
+                android:id="@+id/post1"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/loc"
+                android:src="@drawable/tokyostock"
+                android:scaleType="fitXY"/>
+
+
+            <TextView
+                android:id="@+id/counter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="10dp"
+                android:background="@drawable/oval"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="110dp"
+                android:layout_marginRight="20dp"
+                android:text="1/3"
+                android:textColor="@color/white"
+                android:textSize="15dp">
+
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/heart"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/heart"
+                android:layout_below="@+id/post1"
+                />
+            <ImageView
+                android:id="@+id/comment"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/heart"
+                android:layout_marginLeft="10dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/comment"
+                android:layout_below="@+id/post1"
+                />
+            <ImageView
+                android:id="@+id/share"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/comment"
+                android:layout_marginLeft="10dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/share"
+                android:layout_below="@+id/post1"
+                />
+            <ImageView
+                android:id="@+id/postscrnum"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerInParent="true"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:src="@drawable/postscrnum"
+                android:layout_below="@+id/post1"
+                />
+            <ImageView
+                android:id="@+id/bookmark"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/bookmark"
+                android:layout_below="@+id/post1"
+                />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/npc7"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_below="@id/heart"
+                android:src="@drawable/npc4"/>
+
+            <TextView
+                android:id="@+id/likeby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/npc7"
+                android:layout_below="@id/heart"
+                android:layout_marginLeft="20dp"
+                android:elevation="10dp"
+                android:text="Liked by craid_d and 44,686 others"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/commentby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/likeby"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:elevation="10dp"
+                android:text="joshua_l The game in Japan was amazing and i want to share some photos"
+                android:textColor="@color/black"
+                android:textSize="18dp">
+
+            </TextView>
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/HomeInd"
+        android:layout_marginTop="10dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/homeind"
+        android:layout_below="@+id/posts"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/prohomeind"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@id/posts"
+        android:layout_toRightOf="@id/HomeInd"
+        android:src="@drawable/profilepic"/>
+
+
+
+
+
+</RelativeLayout>
