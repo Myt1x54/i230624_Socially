@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/statusbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:src="@drawable/androidstatusbar"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/tab_following"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/statusbar"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="60dp"
+        android:text="Following"
+        android:textColor="@color/red"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/redline"
+        android:layout_width="200dp"
+        android:layout_height="4dp"
+        android:background="@color/red"
+        android:layout_below="@id/tab_following"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/tab_you"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="80dp"
+        android:layout_alignBaseline="@id/tab_following"
+        android:text="You"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+
+    <ScrollView
+        android:id="@+id/scroll_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/navhome"
+        android:layout_below="@id/tab_following"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/user1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/npc1" />
+
+                <TextView
+                    android:id="@+id/user1_action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/user1"
+                    android:text="karennne liked 3 posts. 3h"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:id="@+id/user1_post"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_below="@+id/user1_action"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/user1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sample1" />
+
+                <ImageView
+                    android:id="@+id/user1_post2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_below="@+id/user1_action"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/user1_post"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sample2" />
+
+                <ImageView
+                    android:id="@+id/user1_post3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_below="@+id/user1_action"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/user1_post2"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sample3" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/user2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/npc2" />
+
+                <TextView
+                    android:id="@+id/user2_action"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/user2"
+                    android:text="kiero_d, zackjohn and craig_love\nliked joshua_l photo. 3h"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:id="@+id/user2_post"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/user2_action"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sample4" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/user3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/npc3" />
+
+                <TextView
+                    android:id="@+id/user3_action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/user3"
+                    android:layout_marginLeft="10dp"
+                    android:text="matilda_jerff started following you. 5h"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/user4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/npc4" />
+
+                <TextView
+                    android:id="@+id/user4_action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/user4"
+                    android:layout_marginLeft="10dp"
+                    android:text="craig_love liked your comment: “This is\namazing 🔥🔥🔥” 1d"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/user5"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/npc5" />
+
+                <TextView
+                    android:id="@+id/user5_action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/user5"
+                    android:layout_marginLeft="10dp"
+                    android:text="joshua_l mentioned you in a comment:\n“@you this is for you 😂” 2d"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/user6"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/npc6" />
+
+                <TextView
+                    android:id="@+id/user6_action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/user6"
+                    android:layout_marginLeft="10dp"
+                    android:text="zackjohn started following you. 2d"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/navhome"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/homeicon" />
+
+    <ImageView
+        android:id="@+id/navsearch"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="110dp"
+        android:src="@drawable/searchiconbold" />
+
+    <ImageView
+        android:id="@+id/navadd"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/addicon" />
+
+    <ImageView
+        android:id="@+id/navheart"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="110dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/hearticonred" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/navprofile"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/profilepic" />
+
+</RelativeLayout>

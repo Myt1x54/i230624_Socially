@@ -12,6 +12,33 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.I230624">
         <activity
+            android:name=".editprofile"
+            android:exported="false" />
+        <activity
+            android:name=".highlight"
+            android:exported="false" />
+        <activity
+            android:name=".profile"
+            android:exported="false" />
+        <activity
+            android:name=".heartyou"
+            android:exported="false" />
+        <activity
+            android:name=".heartfollowing"
+            android:exported="false" />
+        <activity
+            android:name=".phonecall"
+            android:exported="false" />
+        <activity
+            android:name=".individualmsg"
+            android:exported="false" />
+        <activity
+            android:name=".messages"
+            android:exported="false" />
+        <activity
+            android:name=".searchpage"
+            android:exported="false" />
+        <activity
             android:name=".explorepage"
             android:exported="false" />
         <activity
