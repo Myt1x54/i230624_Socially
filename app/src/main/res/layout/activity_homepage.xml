@@ -433,7 +433,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="20dp"
         android:layout_marginLeft="30dp"
-        android:src="@drawable/homeicon" />
+        android:src="@drawable/homeiconbold" />
 
     <ImageView
         android:id="@+id/navsearch"
@@ -441,8 +441,9 @@
         android:layout_height="40dp"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="20dp"
-        android:layout_marginLeft="110dp"
-        android:src="@drawable/searchiconbold" />
+        android:layout_toRightOf="@+id/navhome"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/searchicon" />
 
     <ImageView
         android:id="@+id/navadd"
@@ -450,7 +451,8 @@
         android:layout_height="40dp"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="20dp"
-        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@+id/navsearch"
+        android:layout_marginLeft="30dp"
         android:src="@drawable/addicon" />
 
     <ImageView
@@ -459,8 +461,8 @@
         android:layout_height="40dp"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="20dp"
-        android:layout_marginRight="110dp"
-        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/navadd"
+        android:layout_marginLeft="30dp"
         android:src="@drawable/hearticon" />
 
     <de.hdodenhof.circleimageview.CircleImageView
@@ -469,8 +471,8 @@
         android:layout_height="40dp"
         android:layout_marginBottom="20dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginRight="30dp"
-        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/navheart"
+        android:layout_marginLeft="30dp"
         android:src="@drawable/profilepic" />
 
 
