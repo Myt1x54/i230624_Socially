@@ -8,9 +8,19 @@
     android:background="@color/black">
 
     <ImageView
+        android:id="@+id/statusbar"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:src="@drawable/androidstatusbar"
+        android:scaleType="fitXY"/>
+
+
+    <ImageView
         android:id="@+id/storyImage"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_below="@+id/statusbar"
         android:scaleType="centerCrop"
         android:src="@drawable/sample_story" />
 
@@ -19,7 +29,7 @@
         android:layout_width="match_parent"
         android:layout_height="4dp"
         android:orientation="horizontal"
-        android:layout_alignParentTop="true"
+        android:layout_below="@+id/statusbar"
         android:layout_marginTop="5dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
@@ -76,11 +86,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:layout_below="@+id/statusbar"
         android:gravity="center_vertical"
         android:layout_marginTop="10dp"
         android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:layout_alignParentTop="true">
+        android:paddingRight="10dp">
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/storyProfile"

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="@color/black">
+
+    <!-- Status Bar -->
+    <ImageView
+        android:id="@+id/statusbar"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:src="@drawable/androidstatusbar"
+        android:background="@color/white"
+        android:scaleType="fitXY"/>
+
+    <ImageView
+        android:id="@+id/story_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/statusbar"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sample_story" />
+
+
+    <RelativeLayout
+        android:id="@+id/toolsstory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/statusbar">
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/greyoval"
+            android:src="@drawable/closeicon"
+            android:layout_alignParentTop="true"/>
+
+        <ImageView
+            android:id="@+id/moreop"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/greyoval"
+            android:src="@drawable/moreop"/>
+
+        <ImageView
+            android:id="@+id/threestars"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_toLeftOf="@+id/moreop"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/greyoval"
+            android:src="@drawable/threestars"/>
+
+        <ImageView
+            android:id="@+id/music"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_toLeftOf="@+id/threestars"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/greyoval"
+            android:src="@drawable/music"/>
+
+        <ImageView
+            android:id="@+id/sticker"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_toLeftOf="@+id/music"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/greyoval"
+            android:src="@drawable/stickers"/>
+
+        <ImageView
+            android:id="@+id/doublea"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_toLeftOf="@+id/sticker"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/greyoval"
+            android:src="@drawable/doublea"/>
+
+        <ImageView
+            android:id="@+id/done"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_toLeftOf="@+id/doublea"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/greyoval"
+            android:src="@drawable/done"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black">
+
+        <TextView
+            android:id="@+id/your_story"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/close_friends"
+            android:text="    Your stories   "
+            android:textColor="@color/white"
+            android:background="@drawable/greyoval"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/close_friends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/arrow"
+            android:layout_marginRight="20dp"
+            android:text="    Close Friends  "
+            android:textColor="@color/white"
+            android:background="@drawable/greyoval"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/redoval"
+            android:src="@drawable/rightarrow"/>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <ImageView
+        android:id="@+id/statusbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:src="@drawable/androidstatusbar"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:id="@+id/storyProgressBars"
+        android:layout_below="@+id/statusbar"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center_vertical">
+
+        <ProgressBar
+            android:id="@+id/progress1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:progress="50"
+            android:max="100"
+            android:progressDrawable="@drawable/progbar"
+            android:indeterminate="false"/>
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent" />
+
+        <ProgressBar
+            android:id="@+id/progress2"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:progress="0"
+            android:max="100"
+            android:progressDrawable="@drawable/progbar"
+            android:indeterminate="false"/>
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent" />
+
+        <ProgressBar
+            android:id="@+id/progress3"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:progress="0"
+            android:max="100"
+            android:progressDrawable="@drawable/progbar"
+            android:indeterminate="false"/>
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent" />
+
+        <ProgressBar
+            android:id="@+id/progress4"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:progress="0"
+            android:max="100"
+            android:progressDrawable="@drawable/progbar"
+            android:indeterminate="false"/>
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent" />
+
+        <ProgressBar
+            android:id="@+id/progress5"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:progress="0"
+            android:max="100"
+            android:progressDrawable="@drawable/progbar"
+            android:indeterminate="false"/>
+    </LinearLayout>
+
+    <!-- Profile picture -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/storyprofile"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/storyProgressBars"
+        android:src="@drawable/profilepic" />
+
+    <!-- Username -->
+    <TextView
+        android:id="@+id/storyusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/storyprofile"
+        android:layout_alignTop="@id/storyprofile"
+        android:layout_marginLeft="10dp"
+        android:text="craig_love"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Time -->
+    <TextView
+        android:id="@+id/storytime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/storyusername"
+        android:layout_alignTop="@id/storyusername"
+        android:layout_marginLeft="10dp"
+        android:text="4h"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/storyimage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/storyprofile"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/tokyostock" />
+
+    <!-- Message bar -->
+    <RelativeLayout
+        android:id="@+id/messagebar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black">
+
+        <ImageView
+            android:id="@+id/camera"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/blackoval"
+            android:src="@drawable/redcamera"/>
+
+        <EditText
+            android:id="@+id/messagebox"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/camera"
+            android:layout_toLeftOf="@id/send"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/blackoval"
+            android:hint="Send Message"
+            android:paddingLeft="15dp"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/send"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toLeftOf="@+id/moreop"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/sendicon" />
+
+        <ImageView
+            android:id="@+id/moreop"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/moreopred" />
+    </RelativeLayout>
+
+</RelativeLayout>

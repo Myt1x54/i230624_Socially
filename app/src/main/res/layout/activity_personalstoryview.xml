@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="@color/black">
+
+    <ImageView
+        android:id="@+id/statusbar"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:src="@drawable/androidstatusbar"
+        android:scaleType="fitXY"/>
+
+    <!-- Story Progress -->
+    <ProgressBar
+        android:id="@+id/story_progress"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_below="@id/statusbar"
+        android:progress="70"
+        android:max="100"
+        android:layout_marginTop="5dp"
+        android:progressDrawable="@drawable/progbar"
+        android:indeterminate="false"/>
+
+    <!-- Story Image -->
+    <ImageView
+        android:id="@+id/story_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/story_progress"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sample_story" />
+
+    <LinearLayout
+        android:id="@+id/storyTopBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/story_progress"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/storyProfile"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/profilepic" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/storyTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="gursky.studio "
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/tick"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@color/white"
+                android:src="@drawable/tickmark"
+                android:scaleType="fitXY"/>
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="    11h"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/floatingHearts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="150dp"
+        android:layout_marginLeft="20dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/hearticonred" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/hearticonred" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/hearticonred" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/hearticonred" />
+    </LinearLayout>
+
+    <!-- Bottom Navigation -->
+    <RelativeLayout
+        android:id="@+id/nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black">
+
+        <ImageView
+            android:id="@+id/nav_activity"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/activityimg"/>
+
+        <ImageView
+            android:id="@+id/nav_search"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@id/nav_activity"
+            android:layout_centerVertical="true"
+            android:src="@drawable/createimg"/>
+
+        <ImageView
+            android:id="@+id/nav_facebook"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/nav_search"
+            android:layout_centerVertical="true"
+            android:src="@drawable/facebookimg"/>
+
+        <ImageView
+            android:id="@+id/nav_highlight"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/nav_facebook"
+            android:layout_centerVertical="true"
+            android:src="@drawable/highlightimg"/>
+
+        <ImageView
+            android:id="@+id/nav_more"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/nav_highlight"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/moreimg"/>
+    </RelativeLayout>
+
+</RelativeLayout>
