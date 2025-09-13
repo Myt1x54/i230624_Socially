@@ -37,6 +37,13 @@ class heartyou : AppCompatActivity() {
             finish()
         }
 
+        val addbutton = findViewById<ImageView>(R.id.navadd)
+
+        addbutton.setOnClickListener {
+            val intent = Intent(this, uploadpics::class.java)
+            startActivity(intent)
+        }
+
         val profilebutton = findViewById<de.hdodenhof.circleimageview.CircleImageView>(R.id.navprofile)
 
         profilebutton.setOnClickListener {

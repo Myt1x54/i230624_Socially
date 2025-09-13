@@ -30,6 +30,13 @@ class homepage : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val addbutton = findViewById<ImageView>(R.id.navadd)
+
+        addbutton.setOnClickListener {
+            val intent = Intent(this, uploadpics::class.java)
+            startActivity(intent)
+        }
+
         val heartbutton = findViewById<ImageView>(R.id.navheart)
 
         heartbutton.setOnClickListener {
