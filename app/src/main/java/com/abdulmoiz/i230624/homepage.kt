@@ -94,10 +94,10 @@ class homepage : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val storycreationbutton = findViewById<de.hdodenhof.circleimageview.CircleImageView>(R.id.profile_image)
+        val personalstoryviewbutton = findViewById<de.hdodenhof.circleimageview.CircleImageView>(R.id.profile_image)
 
-        storycreationbutton.setOnClickListener {
-            val intent = Intent(this, storycreation::class.java)
+        personalstoryviewbutton.setOnClickListener {
+            val intent = Intent(this, personalstoryview::class.java)
             startActivity(intent)
         }
 

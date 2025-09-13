@@ -255,9 +255,9 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30dp"
         android:layout_marginBottom="20dp"
         android:layout_toRightOf="@+id/navhome"
-        android:layout_marginLeft="30dp"
         android:src="@drawable/searchicon" />
 
     <ImageView

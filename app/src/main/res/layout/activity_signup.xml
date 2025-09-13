@@ -28,6 +28,7 @@
             android:layout_height="match_parent">
 
             <ImageView
+                android:id="@+id/backbutton"
                 android:layout_width="50dp"
                 android:layout_height="100dp"
                 android:layout_alignParentTop="true"
@@ -266,6 +267,7 @@
             </ImageView>
 
             <Button
+                android:id="@+id/createbutton"
                 android:layout_width="300dp"
                 android:layout_height="80dp"
                 android:backgroundTint="@color/buttoncolor"

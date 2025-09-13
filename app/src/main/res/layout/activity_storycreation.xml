@@ -5,7 +5,6 @@
     android:id="@+id/main"
     android:background="@color/black">
 
-    <!-- Status Bar -->
     <ImageView
         android:id="@+id/statusbar"
         android:layout_width="wrap_content"

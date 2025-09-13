@@ -1,8 +1,10 @@
 package com.abdulmoiz.i230624
 
 import android.content.Intent
+import android.media.Image
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -34,6 +36,16 @@ class loginscreen : AppCompatActivity() {
 
         loginbutton.setOnClickListener {
             val intent = Intent(this, homepage::class.java)
+            startActivity(intent)
+            finish()
+        }
+
+
+        val backbutton = findViewById<ImageView>(R.id.backarrow)
+
+        backbutton.setOnClickListener {
+
+            val intent = Intent(this, changeaccount::class.java)
             startActivity(intent)
             finish()
         }

@@ -82,6 +82,7 @@
             android:orientation="vertical">
 
             <RelativeLayout
+                android:id="@+id/msg1row"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp">
@@ -135,6 +136,7 @@
             </RelativeLayout>
 
             <RelativeLayout
+                android:id="@+id/msg2row"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp">
@@ -187,6 +189,7 @@
                     android:src="@drawable/camera2" />
             </RelativeLayout>
             <RelativeLayout
+                android:id="@+id/msg3row"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp">
@@ -241,6 +244,7 @@
 
 
             <RelativeLayout
+                android:id="@+id/msg4row"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp">
@@ -295,6 +299,7 @@
 
 
             <RelativeLayout
+                android:id="@+id/msg5row"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp">
@@ -348,6 +353,7 @@
             </RelativeLayout>
 
             <RelativeLayout
+                android:id="@+id/msg6row"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp">

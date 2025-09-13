@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/main"
     android:orientation="vertical"
     android:background="@android:color/white">
 
@@ -12,7 +13,6 @@
         android:src="@drawable/androidstatusbar"
         android:scaleType="fitXY"/>
 
-    <!-- Top Bar -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="56dp"
@@ -21,7 +21,6 @@
         android:gravity="center_vertical"
         android:background="@color/white">
 
-        <!-- Back Button -->
         <ImageView
             android:layout_width="24dp"
             android:layout_height="24dp"
@@ -34,7 +33,6 @@
             android:layout_marginLeft="20dp"
             android:src="@drawable/internshalaimg"/>
 
-        <!-- Name -->
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -46,14 +44,13 @@
             android:textSize="18dp"
             android:paddingStart="8dp" />
 
-        <!-- Video Call -->
         <ImageView
+            android:id="@+id/call"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:src="@drawable/videocam"
             android:layout_marginEnd="16dp" />
 
-        <!-- Info Icon -->
         <ImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
@@ -105,7 +102,6 @@
     </ScrollView>
 
 
-    <!-- Bottom Bar -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -115,12 +111,11 @@
         android:background="@android:color/white">
 
         <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/camera"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:scaleType="fitXY"
             android:src="@drawable/camera2"/>
 
-        <!-- Message Input -->
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="40dp"
@@ -130,7 +125,6 @@
             android:padding="10dp"
             android:textSize="14sp" />
 
-        <!-- Gallery -->
         <ImageView
             android:layout_width="32dp"
             android:layout_height="32dp"
@@ -138,15 +132,14 @@
             android:layout_marginStart="6dp"
             android:padding="4dp" />
 
-        <!-- Mic -->
         <ImageView
+            android:id="@+id/gallery"
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:src="@drawable/gallery"
             android:layout_marginStart="6dp"
             android:padding="4dp" />
 
-        <!-- Emoji -->
         <ImageView
             android:layout_width="32dp"
             android:layout_height="32dp"
